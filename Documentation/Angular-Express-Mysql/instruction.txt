@@ -1,6 +1,0 @@
-Backend (Express.js and MySQL)
-1. Install necessary packages:
-
-npm init -y
-npm install express mysql cors
-
