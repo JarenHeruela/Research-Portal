@@ -35,8 +35,10 @@ app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
 
+// ====================================================== //
 // API endpoint to GET USERS
 app.get('/api/users', (req, res) => {
+    // sql query
     const query = 'SELECT * FROM users';
     db.query(query, (err, results) => {
       if (err) {
@@ -47,3 +49,8 @@ app.get('/api/users', (req, res) => {
       }
     });
   });
+
+// API endpoint to CREATE USERS
+
+// API endpoint to UPDATE USERS
+// API endpoint to DELETE USERS
